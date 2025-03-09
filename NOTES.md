@@ -1,6 +1,6 @@
  # React Notes                                                                          
 
-# Basics:   
+## Basics:   
 Q✍️ . Create Hello World Program using only HTML 
 
 Q✍️ . Create Hello World Program using Javascript 
@@ -31,9 +31,14 @@ Q✍️ . To make our app Production ready what should we do?
             We use a package manager known as npm or yarn 
         * npm: 
             npm doesn’t mean node package manager but everything else. 
+            **npm init (Creates a package.json file)**
+            ** npm install -D Vite**
+             Vite is one of the dependency 
+             **Dev dependency**: because we want it in our  development machine 
 
 
 
-# class 2 Notes:
+
+
 
 
