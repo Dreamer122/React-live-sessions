@@ -1,7 +1,6 @@
 import React from "react"
 import ReactDOM from "react-dom/client";
-// import { Header } from "./component";
-import {header} from "./component";
+
         // let heading= document.createElement("h1");
         // heading.innerHTML="Hello Everyone"
         // console.log(heading)
@@ -45,11 +44,38 @@ console.log(nav)
 
 
 
-let container=React.createElement("div",{},[heading,heading2,nav,header])
+let container=React.createElement("div",{},[heading,heading2,nav])
 // -> react -> object -> html(dom)
 // <p> hello</p> -> react.createelement->object -> html
 
 // jsx -> html like syntax
+
+let title= (<div>
+    <h2>Title of project</h2>
+     <p> We are using jsx</p>
+     </div> ) 
+
+let a="xyz"
+let Footer=()=>{
+    return (
+        <p> this is footer</p>
+    )
+}
+// nested component -> component composition
+function Header(){ //<- functional component
+    return (
+        <div>
+            {
+              title
+            }
+            
+           syntax -
+            this is Header component
+            <Footer/>
+        </div>
+    )
+}
+// Header()
 
 
 
@@ -57,6 +83,7 @@ let container=React.createElement("div",{},[heading,heading2,nav,header])
 
     let root=ReactDOM.createRoot(document.getElementById("root"));
     // render showing -> present
-    root.render(container)
+    root.render(<Header/>)
+    // root.render(title)
 
 
