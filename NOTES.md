@@ -67,5 +67,16 @@ Q✍️ . To make our app Production ready what should we do?
     📦 3. Optimized Build with Rollup  
         -  Uses Rollup under the hood for efficient production builds.  
         -  Generates optimized static assets with tree-shaking and code splitting.  
+### * Transitive Dependencies:
+    - We have our package manager which takes care of our
+      transitive dependencies of our code.
+    - If we’ve to build a production ready app which uses all
+      optimisations (like minify, bundling, compression, etc), we
+      need to do all these.
+    - But we can’t do this alone, we need some dependencies on it.
+      Those dependencies are also dependent on other dependencies.
+
+      
+   ![dependencytree](https://github.com/user-attachments/assets/c19d4700-8319-4cf9-a4e1-079cba651021)
 
 
