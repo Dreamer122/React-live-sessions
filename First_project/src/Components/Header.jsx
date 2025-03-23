@@ -1,12 +1,16 @@
+import logo from "../assets/Images/logo.jpg"
+
+import { NavLink,Link } from "react-router"
+
 function Header(){
     return (
       <div className="nav">
-        <p>My Food App</p>
+        <img src={logo} alt="logo"  style={{height:"70px"}}/>
         <ul>
-          <li>Home</li>
-          <li>ABout</li>
-          <li>Contact</li>
-          <li>Blog</li>
+          <li><NavLink to="/"> Home </NavLink></li>
+          <li><NavLink to={"/about"}>About</NavLink></li>
+          <li><NavLink to={"/contact"}>Contact</NavLink></li>
+          <li><NavLink to={"/blog"}>Blog</NavLink></li>
         </ul>
 
       </div>

@@ -1,7 +1,7 @@
 import "./App.css"
 import React from "react"
-import Header from "./Components/Header"
-import Footer from "./Components/Footer"
+// import Header from "./Components/Header"
+// import Footer from "./Components/Footer"
 import Body from "./Components/Body"
 
 // internal css
@@ -14,9 +14,9 @@ import Body from "./Components/Body"
 function App(){ // <- functional component 
   return(
     <>
-   <Header/>
+   {/* <Header/> */}
    <Body/>
-   <Footer/>
+   {/* <Footer/> */}
    </>
   )
 }

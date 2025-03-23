@@ -43,10 +43,12 @@ const Body = () => {
   useEffect(
     ()=>{
       callapi()
+      console.log("useeffect called")
     }
-  ,[])
+  ,[searchText])
 
-console.log("rendered")
+// console.log("rendered")
+// console.log("state",searchText)
 
   return (
     <>
@@ -56,7 +58,7 @@ console.log("rendered")
           color: "red",
         }}
       >
-        Restaurant list
+       Product List
       </h2>
 
       {/* 

@@ -1,5 +1,5 @@
 export const Card=(props)=>{
-    console.log(props)
+    // console.log(props)
     const {product}=props
     const {title,rating,thumbnail,category,price}=product
     return (

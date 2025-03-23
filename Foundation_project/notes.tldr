@@ -168078,87 +168078,6 @@
 			"typeName": "shape"
 		},
 		{
-			"id": "pointer:pointer",
-			"typeName": "pointer",
-			"x": 1014.006791450015,
-			"y": 16417.061394904667,
-			"lastActivityTimestamp": 1742132124787,
-			"meta": {}
-		},
-		{
-			"followingUserId": null,
-			"opacityForNextShape": 1,
-			"stylesForNextShape": {
-				"tldraw:fill": "none",
-				"tldraw:color": "green",
-				"tldraw:size": "l",
-				"tldraw:dash": "solid"
-			},
-			"brush": null,
-			"scribbles": [],
-			"cursor": {
-				"type": "cross",
-				"rotation": 0
-			},
-			"isFocusMode": false,
-			"exportBackground": true,
-			"isDebugMode": false,
-			"isToolLocked": false,
-			"screenBounds": {
-				"x": 0,
-				"y": 0,
-				"w": 1063.0787353515625,
-				"h": 509.83795166015625
-			},
-			"insets": [
-				false,
-				false,
-				true,
-				false
-			],
-			"zoomBrush": null,
-			"isGridMode": false,
-			"isPenMode": true,
-			"chatMessage": "",
-			"isChatting": false,
-			"highlightedUserIds": [],
-			"isFocused": true,
-			"devicePixelRatio": 1.7280000448226929,
-			"isCoarsePointer": true,
-			"isHoveringCanvas": false,
-			"openMenus": [],
-			"isChangingStyle": false,
-			"isReadonly": false,
-			"meta": {},
-			"duplicateProps": null,
-			"id": "instance:instance",
-			"currentPageId": "page:page",
-			"typeName": "instance"
-		},
-		{
-			"editingShapeId": null,
-			"croppingShapeId": null,
-			"selectedShapeIds": [
-				"shape:u-_4a1LozlU4fXkMAh55F"
-			],
-			"hoveredShapeId": null,
-			"erasingShapeIds": [],
-			"hintingShapeIds": [],
-			"focusedGroupId": null,
-			"meta": {},
-			"id": "instance_page_state:page:page",
-			"pageId": "page:page",
-			"typeName": "instance_page_state"
-		},
-		{
-			"x": 110.32063343034498,
-			"y": -15840.155697010487,
-			"z": 0.5698172789086143,
-			"meta": {},
-			"id": "camera:page:page",
-			"typeName": "camera"
-		},
-		{
 			"x": 29.831503880142677,
 			"y": 13172.187135720475,
 			"rotation": 0,
@@ -218607,6 +218526,107 @@
 			},
 			"parentId": "page:page",
 			"index": "bMTAs1",
+			"typeName": "shape"
+		},
+		{
+			"id": "pointer:pointer",
+			"typeName": "pointer",
+			"x": 102.9551130648278,
+			"y": 17483.179077926838,
+			"lastActivityTimestamp": 1742651277801,
+			"meta": {}
+		},
+		{
+			"followingUserId": null,
+			"opacityForNextShape": 1,
+			"stylesForNextShape": {
+				"tldraw:size": "l"
+			},
+			"brush": null,
+			"scribbles": [],
+			"cursor": {
+				"type": "default",
+				"rotation": 0
+			},
+			"isFocusMode": false,
+			"exportBackground": true,
+			"isDebugMode": false,
+			"isToolLocked": false,
+			"screenBounds": {
+				"x": 0,
+				"y": 0,
+				"w": 848.9583129882812,
+				"h": 394.09722900390625
+			},
+			"insets": [
+				false,
+				false,
+				true,
+				false
+			],
+			"zoomBrush": null,
+			"isGridMode": false,
+			"isPenMode": false,
+			"chatMessage": "",
+			"isChatting": false,
+			"highlightedUserIds": [],
+			"isFocused": true,
+			"devicePixelRatio": 1.7280000448226929,
+			"isCoarsePointer": false,
+			"isHoveringCanvas": true,
+			"openMenus": [],
+			"isChangingStyle": false,
+			"isReadonly": false,
+			"meta": {},
+			"duplicateProps": null,
+			"id": "instance:instance",
+			"currentPageId": "page:page",
+			"typeName": "instance"
+		},
+		{
+			"editingShapeId": "shape:ESb4QT_ZUWeYgM_6_b4BZ",
+			"croppingShapeId": null,
+			"selectedShapeIds": [
+				"shape:ESb4QT_ZUWeYgM_6_b4BZ"
+			],
+			"hoveredShapeId": "shape:ESb4QT_ZUWeYgM_6_b4BZ",
+			"erasingShapeIds": [],
+			"hintingShapeIds": [],
+			"focusedGroupId": null,
+			"meta": {},
+			"id": "instance_page_state:page:page",
+			"pageId": "page:page",
+			"typeName": "instance_page_state"
+		},
+		{
+			"x": 384.60326869249354,
+			"y": -16917.031795607756,
+			"z": 0.4181189976474829,
+			"meta": {},
+			"id": "camera:page:page",
+			"typeName": "camera"
+		},
+		{
+			"x": -226.40901144457956,
+			"y": 16568.92906243882,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:ESb4QT_ZUWeYgM_6_b4BZ",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "l",
+				"w": 1030.9027099609375,
+				"text": "React router dom ->\n      routes -> url  / path \nhttp://localhost:5173/about\n/ blog \n/signup \n\n<a href=\"./about.html\" />\n\n\n1. useeffect -> [values]\n2. image\n3. react router \n    -> basic route\n    -> common comp in every page\n    -> NAVLINK OR LINK  ->  ANCHOR TAG \n    -> RELOAD  -> STOP \n\n1. HOOKS -> FUNCTIONS \n2. USEsTATE ->  RETURN VALUES [VARIABLE,FUNCTION]\n3.USEEFFECT ->  \n\nTITLE OF TAB \nINTERVAL SERVER ERROR \n",
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1
+			},
+			"parentId": "page:page",
+			"index": "bMUCOX",
 			"typeName": "shape"
 		}
 	]
