@@ -29,3 +29,11 @@ export const Restaurant_list=[
     },
     
     ]
+
+export const titles={
+  "/":"Ecommerce site",
+  "/about":"About-Ecommerce site",
+  "/contact":"Contact-Ecommerce site",
+  "/blog":"Blog-Ecommerce site"
+}
+

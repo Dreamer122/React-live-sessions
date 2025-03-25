@@ -40,3 +40,6 @@
   padding: 5px;
   
 }
+.left-side{
+  display: flex;
+}

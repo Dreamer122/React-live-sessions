@@ -1,7 +1,6 @@
 import "./App.css"
-import React from "react"
-// import Header from "./Components/Header"
-// import Footer from "./Components/Footer"
+import React ,{useEffect} from "react"
+
 import Body from "./Components/Body"
 
 // internal css
@@ -11,12 +10,15 @@ import Body from "./Components/Body"
 
 
 
+
 function App(){ // <- functional component 
+//   useEffect(()=>{
+//     document.title="Ecommerce Site"
+// },[])
+  
   return(
     <>
-   {/* <Header/> */}
    <Body/>
-   {/* <Footer/> */}
    </>
   )
 }

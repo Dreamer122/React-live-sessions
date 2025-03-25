@@ -1,6 +1,13 @@
-// import Header from "../Components/Header"
-// import Footer from "../Components/Footer"
+import { useEffect } from "react"
+
 export const About=()=>{
+
+    // useEffect(()=>{
+    //     document.title="About-ecommerce site"
+    // },[])
+    
+    
+
     return (
         <>
    {/* <Header/> */}

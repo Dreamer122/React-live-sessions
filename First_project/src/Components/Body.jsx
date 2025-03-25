@@ -1,6 +1,7 @@
 import { Card } from "./Card";
 import { Restaurant_list } from "../constants";
 import { useState, useEffect } from "react";
+import { Link } from "react-router";
 
 
 const Body = () => {
@@ -78,7 +79,7 @@ const Body = () => {
             <h1> Data not found Try something else....</h1>
           ) : (
             filtered_data.map((item, index) => {
-              return <Card product={item} key={item.id} />;
+              return  <Link to={`/products/${item.title.split(" ").join("-")}/${item.id}`} key={item.id}><Card product={item}  /> </Link>;
             })
           )
         }

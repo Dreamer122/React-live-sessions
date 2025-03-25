@@ -218529,11 +218529,34 @@
 			"typeName": "shape"
 		},
 		{
+			"x": -226.40901144457956,
+			"y": 16568.92906243882,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:ESb4QT_ZUWeYgM_6_b4BZ",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "l",
+				"w": 1030.9027099609375,
+				"text": "React router dom ->\n      routes -> url  / path \nhttp://localhost:5173/about\n/ blog \n/signup \n\n<a href=\"./about.html\" />\n\n\n1. useeffect -> [values]\n2. image\n3. react router \n    -> basic route\n    -> common comp in every page\n    -> NAVLINK OR LINK  ->  ANCHOR TAG \n    -> RELOAD  -> STOP \n\n1. HOOKS -> FUNCTIONS \n2. USEsTATE ->  RETURN VALUES [VARIABLE,FUNCTION]\n3.USEEFFECT ->  \n\nTITLE OF TAB \nINTERVAL SERVER ERROR \n",
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1
+			},
+			"parentId": "page:page",
+			"index": "bMUCOX",
+			"typeName": "shape"
+		},
+		{
 			"id": "pointer:pointer",
 			"typeName": "pointer",
-			"x": 102.9551130648278,
-			"y": 17483.179077926838,
-			"lastActivityTimestamp": 1742651277801,
+			"x": -666.9725918728478,
+			"y": 18305.83279480773,
+			"lastActivityTimestamp": 1742734998781,
 			"meta": {}
 		},
 		{
@@ -218556,7 +218579,7 @@
 				"x": 0,
 				"y": 0,
 				"w": 848.9583129882812,
-				"h": 394.09722900390625
+				"h": 396.9907531738281
 			},
 			"insets": [
 				false,
@@ -218584,12 +218607,12 @@
 			"typeName": "instance"
 		},
 		{
-			"editingShapeId": "shape:ESb4QT_ZUWeYgM_6_b4BZ",
+			"editingShapeId": "shape:rCAd6eZL2a2JVDNRvfT1K",
 			"croppingShapeId": null,
 			"selectedShapeIds": [
-				"shape:ESb4QT_ZUWeYgM_6_b4BZ"
+				"shape:rCAd6eZL2a2JVDNRvfT1K"
 			],
-			"hoveredShapeId": "shape:ESb4QT_ZUWeYgM_6_b4BZ",
+			"hoveredShapeId": "shape:rCAd6eZL2a2JVDNRvfT1K",
 			"erasingShapeIds": [],
 			"hintingShapeIds": [],
 			"focusedGroupId": null,
@@ -218599,34 +218622,57 @@
 			"typeName": "instance_page_state"
 		},
 		{
-			"x": 384.60326869249354,
-			"y": -16917.031795607756,
-			"z": 0.4181189976474829,
+			"x": 1388.0058984011814,
+			"y": -17794.814829738043,
+			"z": 0.5572198603468432,
 			"meta": {},
 			"id": "camera:page:page",
 			"typeName": "camera"
 		},
 		{
-			"x": -226.40901144457956,
-			"y": 16568.92906243882,
+			"x": -1330.2033643808593,
+			"y": 17834.159321264266,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
 			"meta": {},
-			"id": "shape:ESb4QT_ZUWeYgM_6_b4BZ",
+			"id": "shape:TbG6USBCv281EUFiQK3vf",
 			"type": "text",
 			"props": {
 				"color": "black",
 				"size": "l",
-				"w": 1030.9027099609375,
-				"text": "React router dom ->\n      routes -> url  / path \nhttp://localhost:5173/about\n/ blog \n/signup \n\n<a href=\"./about.html\" />\n\n\n1. useeffect -> [values]\n2. image\n3. react router \n    -> basic route\n    -> common comp in every page\n    -> NAVLINK OR LINK  ->  ANCHOR TAG \n    -> RELOAD  -> STOP \n\n1. HOOKS -> FUNCTIONS \n2. USEsTATE ->  RETURN VALUES [VARIABLE,FUNCTION]\n3.USEEFFECT ->  \n\nTITLE OF TAB \nINTERVAL SERVER ERROR \n",
+				"w": 499.8244934082031,
+				"text": "dynamic route -> \nflipkart.com/sdfghjk\nflipkart.com/boat-airdopes\nflipkart.com/headphones",
 				"font": "draw",
 				"textAlign": "start",
 				"autoSize": true,
 				"scale": 1
 			},
 			"parentId": "page:page",
-			"index": "bMUCOX",
+			"index": "bMV2Rd",
+			"typeName": "shape"
+		},
+		{
+			"x": -1284.913045710161,
+			"y": 18056.169732010447,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:rCAd6eZL2a2JVDNRvfT1K",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "l",
+				"w": 794.0863037109375,
+				"text": "step 1-> create a dynamic route\nstep2 -> link \nstep3 -> page \n\ndolce-frangrance-ab\nsplit(\" \") => [dolce, frangrance,ab].join(\"-\")",
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1
+			},
+			"parentId": "page:page",
+			"index": "bMW9wz",
 			"typeName": "shape"
 		}
 	]
