@@ -1,16 +1,44 @@
 import logo from "../assets/Images/logo.jpg"
 
-import { NavLink,Link } from "react-router"
+import { NavLink,Link,useNavigate } from "react-router"
+import { useState } from "react"
 
 function Header(){
+ const [isloggedin,setIsloggedin]=useState(false)
+ const navigate=useNavigate()
+
+ const login=()=>{
+  setIsloggedin(true)
+ }
+   
+ const move=()=>{
+  if(isloggedin){
+    navigate("/blog")
+   
+  }
+  else{
+    navigate("/")
+  }
+ }
+
+ console.log(isloggedin)
+
     return (
       <div className="nav">
-        <img src={logo} alt="logo"  style={{height:"70px"}}/>
+        <img src={logo} alt="logo"  style={{height:"70px"}} className="rounded-full"/>
         <ul>
           <li><NavLink to="/"> Home </NavLink></li>
           <li><NavLink to={"/about"}>About</NavLink></li>
           <li><NavLink to={"/contact"}>Contact</NavLink></li>
           <li><NavLink to={"/blog"}>Blog</NavLink></li>
+          <li><button onClick={login}>login</button> </li>
+          <li><button onClick={move}>move</button> </li>
+          <li onClick={()=>navigate(-1)}>
+            prev
+          </li>
+          <li onClick={()=>navigate(1)}>
+            next
+          </li>
         </ul>
 
       </div>

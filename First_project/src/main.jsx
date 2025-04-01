@@ -15,6 +15,9 @@ import Footer from './Components/Footer.jsx'
 import { titles } from './constants.js'
 import { Productdesc } from './Pages/Productdesc.jsx'
 import { ServerError } from './Pages/ServerError.jsx'
+import { Women } from './Components/blogs/Women.jsx'
+import { Kids } from './Components/blogs/Kids.jsx'
+import { Men } from './Components/blogs/Men.jsx'
 
 
 const DynamicTitle=()=>{
@@ -37,13 +40,27 @@ createRoot(document.getElementById('root')).render(
 <Route path='/' element={<App/>} /> {/*  "localhost:5173" -> app */}
 <Route path='/about' element={<About/>}/>
 <Route path='/contact' element={<Contact/>}/>
-<Route path='/blog' element={<Blog/>}/>
+<Route path='/blog' element={<Blog/>}>
+{/* nested routes  */}
+ {/* 
+  /blog/womenfashion
+*/}
+  <Route path='' index element={<Men/>} />
+  <Route path='womenfashion' element={<Women/>} /> 
+ 
+  <Route path='kidfashion' element={<Kids/>} />
+
+</Route>
 {/* dynamic route */}
 <Route path='/products/:title/:id' element={<Productdesc/>}/>
 
 {/* <Route path='/*' element={<Errorpage/>}/> */}
 <Route path='/*' element={<Navigate to={"/"}/>}/>
 <Route path="/500" element={<ServerError/>}/>
+
+
+
+
   </Routes>
   <Footer/>
  
