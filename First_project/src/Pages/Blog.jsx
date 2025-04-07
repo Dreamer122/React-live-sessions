@@ -2,7 +2,7 @@ import React, {useEffect} from 'react'
 
 import { Outlet } from 'react-router'
 import { Sidebar } from '../Components/blogs/Sidebar'
-export const Blog = () => {
+ const Blog = () => {
 //   useEffect(()=>{
 //     document.title="Blog-ecommerce site"
 // },[])
@@ -20,3 +20,4 @@ export const Blog = () => {
       </div>
   )
 }
+export default Blog;

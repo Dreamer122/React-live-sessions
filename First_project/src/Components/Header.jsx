@@ -2,6 +2,7 @@ import logo from "../assets/Images/logo.jpg"
 
 import { NavLink,Link,useNavigate } from "react-router"
 import { useState } from "react"
+import useOnline from "../utils/useOnline"
 
 function Header(){
  const [isloggedin,setIsloggedin]=useState(false)
@@ -23,6 +24,8 @@ function Header(){
 
  console.log(isloggedin)
 
+ const isonline=useOnline()
+
     return (
       <div className="nav">
         <img src={logo} alt="logo"  style={{height:"70px"}} className="rounded-full"/>
@@ -39,6 +42,7 @@ function Header(){
           <li onClick={()=>navigate(1)}>
             next
           </li>
+          <li>{isonline?"🟢":"🔴"}</li>
         </ul>
 
       </div>

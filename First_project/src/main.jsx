@@ -1,10 +1,10 @@
-import { StrictMode, useEffect } from 'react'
+import { StrictMode, useEffect,lazy, Suspense } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 import {About} from "./Pages/About.jsx"
 import {Contact} from "./Pages/Contact.jsx"
-import {Blog} from "./Pages/Blog.jsx"
+// import {Blog} from "./Pages/Blog.jsx"
 import { Errorpage } from './Pages/Errorpage.jsx'
 
 
@@ -18,6 +18,8 @@ import { ServerError } from './Pages/ServerError.jsx'
 import { Women } from './Components/blogs/Women.jsx'
 import { Kids } from './Components/blogs/Kids.jsx'
 import { Men } from './Components/blogs/Men.jsx'
+
+const Blog=lazy(()=>import("./Pages/Blog.jsx"))
 
 
 const DynamicTitle=()=>{
@@ -40,7 +42,7 @@ createRoot(document.getElementById('root')).render(
 <Route path='/' element={<App/>} /> {/*  "localhost:5173" -> app */}
 <Route path='/about' element={<About/>}/>
 <Route path='/contact' element={<Contact/>}/>
-<Route path='/blog' element={<Blog/>}>
+<Route path='/blog' element={<Suspense fallback={"loading...."}> <Blog/> </Suspense>}>
 {/* nested routes  */}
  {/* 
   /blog/womenfashion
