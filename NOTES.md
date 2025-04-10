@@ -90,7 +90,8 @@ Q✍️ . To make our app Production ready what should we do?
 # * JavaScript XML ( JSX): 
     - When Facebook created React, the major concept behind  bringing react was that we want to write a lot of HTML using  javascript, because JS is very performant. 
 
-![alt text](image.png)
+![Screenshot 2025-04-10 155505](https://github.com/user-attachments/assets/983028c2-46ba-4985-a4c5-892710c28125)
+
 
     - JSX is not ‘HTML inside JavaScript’
     - JSX has ‘HTML like syntax‘
@@ -136,10 +137,12 @@ Q✍️ . To make our app Production ready what should we do?
     - To render functional component write <HeaderComponent />
 
    **React Element:**
-   ![alt text](image-1.png)
+  
+ ![Screenshot 2025-04-10 160345](https://github.com/user-attachments/assets/abbfbc08-800e-4677-b031-32f4e4b11170)
 
    **Functional Component:**
-   ![alt text](image-2.png)
+
+![Screenshot 2025-04-10 160436](https://github.com/user-attachments/assets/f21e57cf-124f-4ab1-b832-6bff2318a124)
 
    #### Important points:
     - Whenever you write jsx, you can write any piece of javascript
@@ -177,7 +180,10 @@ Q✍️ . To make our app Production ready what should we do?
     ‘Material UI’, etc.
 
 ## Q . Can I use ‘React.Fragment ’ inside my ‘React.Fragment’?
-    Yes  ![alt text](image-3.png)
+    Yes 
+  ![Screenshot 2025-04-10 162416](https://github.com/user-attachments/assets/801fef1b-6225-4726-9cb4-eb2bbbb8bbbc)
+
+
 
 **Note:**
     In real world, data coming from api comes as “Array of Objects”
