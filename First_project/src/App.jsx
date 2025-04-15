@@ -3,22 +3,15 @@ import React ,{useEffect} from "react"
 
 import Body from "./Components/Body"
 
-// internal css
 
-
-
-
-
-
-
-function App(){ // <- functional component 
+function App({addCart}){ // <- functional component 
 //   useEffect(()=>{
 //     document.title="Ecommerce Site"
 // },[])
   
   return(
     <>
-   <Body/>
+   <Body addCart={addCart}/>
    </>
   )
 }

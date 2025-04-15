@@ -1,35 +1,43 @@
 import React from "react";
 import { Card } from "./Card";
 import { Restaurant_list } from "../constants";
-import { useState, useEffect } from "react";
+import { useState, useEffect ,useRef} from "react";
 import { Link } from "react-router-dom";
 import { filter_values } from "../utils/helper";
 import useCallApi from "../utils/useCallApi";
 import useOnline from "../utils/useOnline";
 
-const Body = () => {
+
+const Body = ({addCart}) => {
   const [appname, setAppname] = useState("Product Hub");
   const [restaurant_list, setRestaurant_list] = useState([]);
   const [filtered_data, setFilteredData] = useState([]);
 
+  const ref=useRef(10)
+  // console.log(ref)
+
+  // const inputRef=useRef("")
 
 
   // search state
   const [searchText, setSearchText] = useState("");
 
-  // const callapi = async () => {
-  //   const response = await fetch("https://dummyjson.com/products");
-  //   const data = await response.json();
-  //   setRestaurant_list(data.products);
-  //   setFilteredData(data.products);
-  // };
 
   
   const data= useCallApi("https://dummyjson.com/products")
 
   const isonline=useOnline()
 
+  const handleFocus=()=>{
+    ref.current.focus()
+    ref.current.style.backgroundColor="lightgrey";
+   
+  }
   
+useEffect(()=>{
+  // inputRef.current.value="hello"
+  handleFocus()
+},[])
 
   useEffect(() => {
     // callapi();
@@ -55,7 +63,11 @@ const Body = () => {
             onChange={(e) => setSearchText(e.target.value)}
             placeholder="Search products..."
             className="flex-grow px-4 py-2 rounded-l-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-          />
+        ref={ref}
+        />
+{/* <input type="text" ref={inputRef} className="border bg-gray-300" /> */}
+{/* <button onClick={handleFocus} className="bg-blue-300 px-4 py-3 rounded">focus on search bar</button> */}
+
           <button 
             onClick={()=>{
               
@@ -76,13 +88,8 @@ const Body = () => {
           </div>
         ) : (
           filtered_data?.map((item) => (
-            <Link 
-              to={`/products/${item.title.split(" ").join("-")}/${item.id}`} 
-              key={item.id}
-              className="hover:no-underline"
-            >
-              <Card product={item} />
-            </Link>
+            <Card product={item} addCart={addCart}  key={item.id} />
+            
           ))
         )}
       </div>

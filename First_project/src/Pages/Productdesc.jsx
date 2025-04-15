@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router'
+import { Accordion } from '../Components/Accordion'
 
 import useCallApi from '../utils/useCallApi'
 export const Productdesc = () => {
@@ -10,6 +11,7 @@ export const Productdesc = () => {
     
     
   return (
+    <>
     <div className='' style={{display:"flex"}}>
       {/* right left */}
       <div className="left-side">
@@ -37,5 +39,9 @@ export const Productdesc = () => {
       </div>
 
     </div>
+    {/* accordion */}
+    <h3 className='text-5xl text-center my-5'>FAQ</h3>
+<Accordion></Accordion>
+    </>
   )
 }

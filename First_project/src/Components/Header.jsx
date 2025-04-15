@@ -4,7 +4,7 @@ import { NavLink,Link,useNavigate } from "react-router"
 import { useState } from "react"
 import useOnline from "../utils/useOnline"
 
-function Header(){
+function Header({length}){
  const [isloggedin,setIsloggedin]=useState(false)
  const navigate=useNavigate()
 
@@ -34,14 +34,15 @@ function Header(){
           <li><NavLink to={"/about"}>About</NavLink></li>
           <li><NavLink to={"/contact"}>Contact</NavLink></li>
           <li><NavLink to={"/blog"}>Blog</NavLink></li>
+          <li><NavLink to={"/cart"}>Cart <span>{length}</span></NavLink></li>
           <li><button onClick={login}>login</button> </li>
-          <li><button onClick={move}>move</button> </li>
-          <li onClick={()=>navigate(-1)}>
+          {/* <li><button onClick={move}>move</button> </li> */}
+          {/* <li onClick={()=>navigate(-1)}>
             prev
           </li>
           <li onClick={()=>navigate(1)}>
             next
-          </li>
+          </li> */}
           <li>{isonline?"🟢":"🔴"}</li>
         </ul>
 

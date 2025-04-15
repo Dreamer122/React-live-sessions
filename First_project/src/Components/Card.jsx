@@ -1,13 +1,20 @@
 import React from "react";
+import { Link } from "react-router";
 
 export const Card = (props) => {
-  const { product } = props;
-  const { title, rating, thumbnail, category, price } = product;
+  const { product ,addCart} = props;
+  const { title, rating, thumbnail, category, price ,id} = product;
   
   return (
+
     <div className="flex flex-col rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-200 bg-white cursor-pointer hover:-translate-y-1 m-2 border border-gray-100">
       {/* Image with category tag */}
-      <div className="relative aspect-square">
+      <Link 
+              to={`/products/${title.split(" ").join("-")}/${id}`} 
+          
+              className="hover:no-underline"
+            >
+            <div className="relative aspect-square">
         <img 
           src={thumbnail} 
           alt={title}
@@ -17,6 +24,8 @@ export const Card = (props) => {
           {category}
         </span>
       </div>
+            </Link>
+      
       
       {/* Content */}
       <div className="p-4 flex flex-col flex-grow">
@@ -33,7 +42,7 @@ export const Card = (props) => {
             </span>
           </div>
           
-          <button className="w-full bg-gray-900 hover:bg-gray-800 text-white py-2 px-4 rounded-lg transition-colors duration-200 text-sm font-medium">
+          <button onClick={()=>addCart(product)} className="w-full bg-gray-900 hover:bg-gray-800 text-white py-2 px-4 rounded-lg transition-colors duration-200 text-sm font-medium">
             Add to Cart
           </button>
         </div>
