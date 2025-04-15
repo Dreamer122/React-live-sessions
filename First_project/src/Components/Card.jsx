@@ -1,9 +1,13 @@
-import React from "react";
+import React,{useContext} from "react";
 import { Link } from "react-router";
+import CartContext from "../utils/context/CartContext";
+
+
 
 export const Card = (props) => {
-  const { product ,addCart} = props;
+  const { product } = props;
   const { title, rating, thumbnail, category, price ,id} = product;
+  const {addCart}=useContext(CartContext)
   
   return (
 

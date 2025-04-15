@@ -21,24 +21,25 @@ import { Men } from '../Components/blogs/Men.jsx'
 import { Cart } from './Cart.jsx'
 
 const Blog=lazy(()=>import("./Blog.jsx"))
+import {Toaster} from "react-hot-toast"
 
 
 export const Layout = () => {
 
-    const [cart,setCart]=useState([]);
+    // const [cart,setCart]=useState([]);
 
-    const addCart=(product)=>{
-        console.log("data added")
-        setCart([...cart,product])
+    // const addCart=(product)=>{
+    //     console.log("data added")
+    //     setCart([...cart,product])
         
-    }
+    // }
 
   return (
   <>
 
-    <Header length={cart.length}/>
+    <Header />
     <Routes>
-  <Route path='/' element={<App addCart={addCart}/>} /> {/*  "localhost:5173" -> app */}
+  <Route path='/' element={<App />} /> {/*  "localhost:5173" -> app */}
   <Route path='/about' element={<About/>}/>
   <Route path='/contact' element={<Contact/>}/>
   <Route path='/blog' element={<Suspense fallback={"loading...."}> <Blog/> </Suspense>}>
@@ -59,12 +60,14 @@ export const Layout = () => {
   <Route path='/*' element={<Navigate to={"/"}/>}/>
   <Route path="/500" element={<ServerError/>}/>
   
-  <Route path='/cart' element={<Cart cart={cart}/>} />
+  <Route path='/cart' element={<Cart />} />
   
   
   
     </Routes>
     <Footer/>
+  <Toaster/>
+
     </>
   )
 }
