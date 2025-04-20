@@ -8,7 +8,7 @@ import useCallApi from "../utils/useCallApi";
 import useOnline from "../utils/useOnline";
 
 
-const Body = ({addCart}) => {
+const Body = () => {
   const [appname, setAppname] = useState("Product Hub");
   const [restaurant_list, setRestaurant_list] = useState([]);
   const [filtered_data, setFilteredData] = useState([]);
@@ -88,7 +88,9 @@ useEffect(()=>{
           </div>
         ) : (
           filtered_data?.map((item) => (
-            <Card product={item} addCart={addCart}  key={item.id} />
+            <Card product={item}  key={item.id} >
+              hello
+              </Card>
             
           ))
         )}
@@ -105,6 +107,8 @@ useEffect(()=>{
             Update App Name
           </button>
         </div>
+
+        
       </footer>
     </div>
   );

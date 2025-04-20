@@ -1,12 +1,14 @@
 import logo from "../assets/Images/logo.jpg"
 
 import { NavLink,Link,useNavigate } from "react-router"
-import { useState } from "react"
+import { useState, useContext } from "react"
 import useOnline from "../utils/useOnline"
+import CartContext from "../utils/context/CartContext"
 
-function Header({length}){
+function Header(){
  const [isloggedin,setIsloggedin]=useState(false)
  const navigate=useNavigate()
+ const {cart}=useContext(CartContext)
 
  const login=()=>{
   setIsloggedin(true)
@@ -34,7 +36,7 @@ function Header({length}){
           <li><NavLink to={"/about"}>About</NavLink></li>
           <li><NavLink to={"/contact"}>Contact</NavLink></li>
           <li><NavLink to={"/blog"}>Blog</NavLink></li>
-          <li><NavLink to={"/cart"}>Cart <span>{length}</span></NavLink></li>
+          <li><NavLink to={"/cart"}>Cart <span>{cart?.length}</span></NavLink></li>
           <li><button onClick={login}>login</button> </li>
           {/* <li><button onClick={move}>move</button> </li> */}
           {/* <li onClick={()=>navigate(-1)}>

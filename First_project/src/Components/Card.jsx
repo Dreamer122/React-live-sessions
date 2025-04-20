@@ -1,9 +1,11 @@
-import React from "react";
+import React, {useContext} from "react";
 import { Link } from "react-router";
+import CartContext from "../utils/context/CartContext";
 
 export const Card = (props) => {
-  const { product ,addCart} = props;
+  const { product } = props;
   const { title, rating, thumbnail, category, price ,id} = product;
+  const {addCart}=useContext(CartContext)
   
   return (
 
@@ -41,8 +43,8 @@ export const Card = (props) => {
               <span>{rating}</span>
             </span>
           </div>
-          
-          <button onClick={()=>addCart(product)} className="w-full bg-gray-900 hover:bg-gray-800 text-white py-2 px-4 rounded-lg transition-colors duration-200 text-sm font-medium">
+          {/* <p>{props.children}</p> */}
+          <button  onClick={()=>addCart(product)} className="w-full bg-gray-900 hover:bg-gray-800 text-white py-2 px-4 rounded-lg transition-colors duration-200 text-sm font-medium">
             Add to Cart
           </button>
         </div>
