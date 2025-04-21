@@ -1,6 +1,6 @@
 import React,{useContext, useEffect, useState} from 'react'
 import CartContext from '../utils/context/CartContext'
-import { FaPlus } from "react-icons/fa6";
+import { FaPlus } from "react-icons/fa";
 import { FaMinus } from "react-icons/fa";
 
 export const Cart = () => {
