@@ -8,7 +8,7 @@ import CartContext from "../utils/context/CartContext"
 function Header(){
  const [isloggedin,setIsloggedin]=useState(false)
  const navigate=useNavigate()
- const {cart}=useContext(CartContext)
+ const {cart,auth,logout}=useContext(CartContext)
 
  const login=()=>{
   setIsloggedin(true)
@@ -37,7 +37,10 @@ function Header(){
           <li><NavLink to={"/contact"}>Contact</NavLink></li>
           <li><NavLink to={"/blog"}>Blog</NavLink></li>
           <li><NavLink to={"/cart"}>Cart <span>{cart?.length}</span></NavLink></li>
-          <li><button onClick={login}>login</button> </li>
+          <li><NavLink to={"/login"}>Login</NavLink></li>
+        
+         { auth && <li><button onClick={logout} className="px-4 py-2 rounded bg-blue-400 text-white">logout</button> </li> }
+          {/* <li><button onClick={login}>login</button> </li> */}
           {/* <li><button onClick={move}>move</button> </li> */}
           {/* <li onClick={()=>navigate(-1)}>
             prev
