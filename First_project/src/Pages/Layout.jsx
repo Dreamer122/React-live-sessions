@@ -20,6 +20,7 @@ import { Kids } from '../Components/blogs/Kids.jsx'
 import { Men } from '../Components/blogs/Men.jsx'
 import { Cart } from './Cart.jsx'
 import {Toaster} from "react-hot-toast"
+import { ProtectedRoute } from './ProtectedRoute.jsx'
 
 const Blog=lazy(()=>import("./Blog.jsx"))
 
@@ -56,7 +57,10 @@ export const Layout = () => {
   <Route path='/*' element={<Navigate to={"/"}/>}/>
   <Route path="/500" element={<ServerError/>}/>
   
-  <Route path='/cart' element={<Cart />} />
+  
+
+  <Route path='/cart' element={ <ProtectedRoute><Cart /> </ProtectedRoute>} />
+  
   
   
   

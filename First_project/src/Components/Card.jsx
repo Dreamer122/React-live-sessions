@@ -44,6 +44,9 @@ export const Card = (props) => {
             </span>
           </div>
           {/* <p>{props.children}</p> */}
+          {/* <button  onClick={()=>addCart(product)} className="w-full bg-indigo-700 hover:bg-indigo-800 text-white py-2 px-4 rounded-lg transition-colors duration-200 text-sm font-medium">
+            Add to Cart
+          </button> */}
           <button  onClick={()=>addCart(product)} className="w-full bg-gray-900 hover:bg-gray-800 text-white py-2 px-4 rounded-lg transition-colors duration-200 text-sm font-medium">
             Add to Cart
           </button>
