@@ -1,22 +1,11 @@
-import { createContext ,useState} from "react"
+import { createContext ,use,useState} from "react"
 import toast from "react-hot-toast";
 const CartContext=createContext()
 
 
 export const CartProvider=({children})=>{
     const [cart,setCart]=useState([]);
-    // auth
     const [auth,setAuth]=useState(false)
-    // login function with boolean value
-    const login=()=>{
-        setAuth(true)
-        toast.success("login successfully")
-    }
-    // logout function with boolean value
-    const logout=()=>{
-        setAuth(false)
-        toast.success("logged out successfully")
-    }
     const addCart=(product)=>{
         console.log("data added")
         const exists=cart.find((item)=>{
@@ -83,11 +72,19 @@ export const CartProvider=({children})=>{
         return price
     }
 
+    // login 
+    const login=()=>{
+        setAuth(true)
+        toast.success("logged in successfully")
+    }
+    const logout=()=>{
+        setAuth(false)
+        toast.success("log out successfully")
+    }
+
 
     return(
-        <CartContext.Provider value={{cart,addCart,removeProduct,clearCart,increase,decrease,totalCartPrice
-,login,logout,auth
-        }}>
+        <CartContext.Provider value={{cart,addCart,removeProduct,clearCart,increase,decrease,totalCartPrice,login,logout,auth}}>
         {children}
         </CartContext.Provider>
     )
