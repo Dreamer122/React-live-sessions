@@ -8,12 +8,16 @@ import CartContext from "../utils/context/CartContext"
 function Header(){
  const [isloggedin,setIsloggedin]=useState(false)
  const navigate=useNavigate()
+
+ 
+
  const {cart,auth,logout}=useContext(CartContext)
 
  const login=()=>{
   setIsloggedin(true)
  }
    
+
  const move=()=>{
   if(isloggedin){
     navigate("/blog")
@@ -24,19 +28,20 @@ function Header(){
   }
  }
 
- console.log(isloggedin)
+//  console.log(isloggedin)
 
  const isonline=useOnline()
 
     return (
-      <div className="nav">
+      <div className="bg-white shadow-sm sticky top-0 z-50 flex items-center justify-around">
         <img src={logo} alt="logo"  style={{height:"70px"}} className="rounded-full"/>
-        <ul>
+        <ul className="list-none flex gap-10 p-5 m-0">
           <li><NavLink to="/"> Home </NavLink></li>
           <li><NavLink to={"/about"}>About</NavLink></li>
           <li><NavLink to={"/contact"}>Contact</NavLink></li>
           <li><NavLink to={"/blog"}>Blog</NavLink></li>
           <li><NavLink to={"/cart"}>Cart <span>{cart?.length}</span></NavLink></li>
+
           <li><NavLink to={"/login"}>Login</NavLink></li>
         
          { auth && <li><button onClick={logout} className="px-4 py-2 rounded bg-blue-400 text-white">logout</button> </li> }

@@ -7,13 +7,13 @@ import { Sidebar } from '../Components/blogs/Sidebar'
 //     document.title="Blog-ecommerce site"
 // },[])
   return (
-    <div style={{display:"flex",justifyContent:"space-around"}}>
+    <div className='flex min-h-screen bg-gray-50'>
      
     <div>
       <Sidebar/>
     </div>
       
-      <div>
+      <div className='flex-1 p-8'>
         {/* child component */}
        <Outlet/>
       </div>

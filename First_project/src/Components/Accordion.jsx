@@ -26,7 +26,7 @@ export const Accordion = () => {
  {
     FAQ.map((items,index)=>{
         return(
-            <AccordionSection Question={items.question} answer={items.answer}
+            <AccordionSection key={index} Question={items.question} answer={items.answer}
              isOpen={sectionIndex===index}
              setIsOpen={()=>setIsOpen(index)}
              />
