@@ -6,11 +6,11 @@ import { Sidebar } from "../Components/Sidebar"
 export const Layout = () => {
   return (
   <>
-  <Header/>
+  
     {/* main container */}
   <div className='flex'>
     {/* left div side bar */}
-    <div className='w-4/12'>
+    <div className='w-3/12'>
         <Sidebar></Sidebar>
     </div>
     {/* right div all routes */}
@@ -18,7 +18,7 @@ export const Layout = () => {
 <Outlet/>
     </div>
   </div>
-  <Footer/>
+
   
   </>
   )

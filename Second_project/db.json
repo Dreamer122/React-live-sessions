@@ -1,22 +1,30 @@
 {
     "employees":[
         {
+            "id":1,
             "firstname":"Suyash",
             "Lastname":"Bhawar",
             "post":"Developer",
             "department":"Engineering",
             "salary":"40000",
+            "phone":234567890,
             "dateOfJoining":"23-02-2024",
-            "status":"Active"
+            "status":"Active",
+            "email":"email@gmail.com"
         },
         {
+            "id":2,
             "firstname":"kavish",
             "Lastname":"sign",
             "post":"Accountant",
             "department":"Finance",
             "salary":"50000",
-            "dateOfJoining":"18-04-2023",
+            "phone":34567890,
+             "dateOfJoining":"18-04-2023",
             "status":"Active"
+            ,
+            "email":"email@gmail.com"
+
         }
     ]
 }

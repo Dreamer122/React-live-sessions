@@ -3,6 +3,7 @@ import { Layout } from "./Pages/Layout"
 import { Dashboard } from "./Pages/Dashboard"
 import { AllEmployees } from "./Pages/AllEmployees"
 import { AddEmployee } from "./Pages/AddEmployee"
+import { ViewEmployee } from "./Pages/ViewEmployee"
 function App(){
   return(<>
   
@@ -12,6 +13,7 @@ function App(){
     <Route index element={<Dashboard/>}/>
     <Route path="/Allemployee" element={<AllEmployees/>}/>
     <Route path="/AddEmployee" element={<AddEmployee/>}/>
+    <Route path="/view/:id" element={<ViewEmployee/>}/>
 
 </Route>
   </Routes>
