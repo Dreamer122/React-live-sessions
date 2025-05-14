@@ -1,30 +1,88 @@
 {
-    "employees":[
-        {
-            "id":1,
-            "firstname":"Suyash",
-            "Lastname":"Bhawar",
-            "post":"Developer",
-            "department":"Engineering",
-            "salary":"40000",
-            "phone":234567890,
-            "dateOfJoining":"23-02-2024",
-            "status":"Active",
-            "email":"email@gmail.com"
-        },
-        {
-            "id":2,
-            "firstname":"kavish",
-            "Lastname":"sign",
-            "post":"Accountant",
-            "department":"Finance",
-            "salary":"50000",
-            "phone":34567890,
-             "dateOfJoining":"18-04-2023",
-            "status":"Active"
-            ,
-            "email":"email@gmail.com"
-
-        }
-    ]
+  "employees": [
+    {
+      "id": "2",
+      "firstname": "kavish",
+      "Lastname": "sign",
+      "post": "Accountant",
+      "department": "Finance",
+      "salary": "50000",
+      "phone": "345-678-8990",
+      "dateOfJoining": "2023-04-18",
+      "status": "Inactive",
+      "email": "Kavish@gmail.com"
+    },
+    {
+      "id": "6a7a",
+      "email": "learn.dreamer@gmail.com",
+      "post": "Developer",
+      "department": "IT",
+      "firstname": "monika",
+      "Lastname": "gola",
+      "phone": "567-890-5643",
+      "salary": "60000",
+      "dateOfJoining": "2025-02-05",
+      "status": "Active"
+    },
+    {
+      "id": "ff83",
+      "email": "sayli@gmail.com",
+      "post": "Analyst",
+      "department": "IT",
+      "firstname": "Sayli",
+      "Lastname": "singh",
+      "phone": "234-567-8890",
+      "salary": "67000",
+      "dateOfJoining": "2025-01-02",
+      "status": "Active"
+    },
+    {
+      "id": "d0e8",
+      "email": "kamal@gmail.com",
+      "post": "Graphic designer",
+      "department": "IT",
+      "firstname": "kamal",
+      "Lastname": "patel",
+      "phone": "678-789-7889",
+      "salary": "50000",
+      "dateOfJoining": "2024-02-22",
+      "status": "Active"
+    },
+    {
+      "id": "e861",
+      "email": "Atish@gmail.com",
+      "post": "sales executive",
+      "department": "sales",
+      "firstname": "Atish",
+      "Lastname": "singh",
+      "phone": "456-789-8999",
+      "salary": "34000",
+      "dateOfJoining": "2025-05-08",
+      "status": "Active"
+    },
+    {
+      "id": "cf8f",
+      "email": "Ajay@gmail.com",
+      "post": "HR executive",
+      "department": "HR",
+      "firstname": "Ajay",
+      "Lastname": "rana",
+      "phone": "345-678-8944",
+      "salary": "45000",
+      "dateOfJoining": "2025-01-09",
+      "status": "Active"
+    },
+    {
+      "id": "2621",
+      "email": "neha@gmail.com",
+      "post": "Accountant",
+      "department": "Finance",
+      "firstname": "Neha",
+      "Lastname": "singh",
+      "phone": "456-789-6789",
+      "salary": "56000",
+      "dateOfJoining": "2025-02-06",
+      "status": "Active"
+    }
+  ]
 }

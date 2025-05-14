@@ -4,6 +4,7 @@ import { Dashboard } from "./Pages/Dashboard"
 import { AllEmployees } from "./Pages/AllEmployees"
 import { AddEmployee } from "./Pages/AddEmployee"
 import { ViewEmployee } from "./Pages/ViewEmployee"
+import { UpdateEmployee } from "./Pages/UpdateEmployee"
 function App(){
   return(<>
   
@@ -14,6 +15,7 @@ function App(){
     <Route path="/Allemployee" element={<AllEmployees/>}/>
     <Route path="/AddEmployee" element={<AddEmployee/>}/>
     <Route path="/view/:id" element={<ViewEmployee/>}/>
+    <Route path="/edit/:id/:name" element={<UpdateEmployee/>}/>
 
 </Route>
   </Routes>

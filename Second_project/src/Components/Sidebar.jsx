@@ -33,8 +33,8 @@ export const Sidebar = () => {
 <ul>
    {
     sidebararray.map((obj,index)=>{
-    return(  <li className='my-2 hover:bg-blue-600'>
-      <NavLink to={obj.path} className="flex"> {obj.icon} <span className='mx-3'>{obj.text}</span></NavLink>
+    return(  <li className='my-2 hover:bg-blue-600' key={index}>
+      <NavLink to={obj.path} className={({isActive})=>`flex ${isActive?'bg-white text-blue-800 rounded py-1 px-2':"bg-blue-700 text-white"}`}> {obj.icon} <span className='mx-3'>{obj.text}</span></NavLink>
     </li>)
 
     })
