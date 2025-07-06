@@ -153,3 +153,62 @@ export const getUserData=async(userid)=>{
     }
 
 }
+
+// update user data
+export const updateUserData=async(docid,userdata)=>{
+    try{
+        let url=""
+        console.log("start")
+        const selectedFile=userdata.profilePic?.[0]
+        if(selectedFile instanceof File){
+            const res=await storage.createFile(
+                bucket,
+                ID.unique(),
+                userdata.profilePic[0],
+                
+            )
+            // console.log("in if")
+            url= storage.getFileView(bucket,res.$id );
+            // console.log("in if")
+        }
+        else{
+            url=userdata.profilePic
+        }
+        
+        const res=await databases.updateDocument(
+            DB_ID,
+            user_coll,
+            docid,
+            {
+               fullname:userdata.fullname,
+               profilePic:url,
+               bio:userdata.bio
+                
+            }
+        )
+        console.log(res)
+        return res
+
+    }
+    catch(error){
+        console.log("error occured while updating user data",error)
+    }
+
+}
+
+// get all post
+
+export const getAllPost=async()=>{
+    try{
+        const res=await databases.listDocuments(
+            DB_ID,
+            post_coll
+        )
+        console.log(res)
+        return res
+
+    }
+    catch(error){
+        console.log("error occured while getting all post",error)
+    }
+}
